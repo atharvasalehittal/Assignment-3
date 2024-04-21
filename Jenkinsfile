@@ -45,7 +45,7 @@ pipeline {
       stage('Deploying to Rancher to single node(deployed in 3 replicas)') {
          steps {
             script{
-               sh "kubectl set image deployment/springdeployment container-0=attusale21/studentsurvey:${env.TIMESTAMP} -n default"
+               sh "kubectl set image deployment/surveynd  container-0=attusale21/studentsurvey:${env.TIMESTAMP} -n default"
             }
          }
       }
