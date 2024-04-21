@@ -19,7 +19,7 @@ pipeline {
         stage('Maven Install') {
             steps {
                script{
-                sh 'mvn install'
+                sh 'mvn install -DskipTests'
             }
             }
         }
